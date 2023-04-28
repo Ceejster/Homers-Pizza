@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    background-color: #c83d16;
+    font-family: sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 4rem;
+}
+
+/* Top bar design */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: black;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ce7c33 ;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+.navbar .toggleButton{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    padding-right: 2rem;
+}
+
+.actionButton {
+    background-color: #c83d16;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.actionButton:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.actionButton:active {
+    scale: 0.95;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdownMenu.open {
+    height: fit-content;
+}
+
+.dropdownMenu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownMenu .actionButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Homer pic design */
+.otherBox {
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: fit-content;
+    align-items: center;
+}
+
+#homerPicBox {
+    padding-top: 1rem;
+    background-image: url("../Photos/ChefHomer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    min-height: 50rem;
+    min-width: fit-content;
+    cursor: pointer;
+}
+
+.homerVeggie {
+    background-image: url("../Photos/HomerVZaa.jpg");
+}
+
+/* Form design */
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 2%;
+    margin: 2%;
+}
+
+.option {
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    background-color: #ce7c33;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    max-width: 15rem;
+    justify-content: center;
+    align-content: center;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.topBox {
+    justify-content: center;
+    display: flex;
+}
+
+.botBox {
+    justify-content: center;
+    display: flex;
+}
+
+.middle {
+    max-width: fit-content;
+    padding: 0.25rem;
+    margin: 0.5rem 0.5rem;
+    background-color: #ce7c33;
+    min-width: 15rem;
+    border-radius: 20px;
+    border: 10px solid #c83d16;
+}
+
+.pizza {
+    text-decoration: underline;
+    
+}
+
+#submitput {
+    margin-bottom: 4rem;
+}
+
+
+/* Footer Design */
+.footer {
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+/* Responsive Design */
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .actionButton {
+        display: none;
+    }
+
+    .navbar .toggleButton {
+        display: block;
+    }
+
+    .dropdownMenu {
+       display: block; 
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdownMenu {
+        left: 2rem;
+        width: unset;
+    }
+}

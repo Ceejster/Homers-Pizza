@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Homers Pizza Generator</title>
+	<link href="./Resources/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo"><a aria-label="CJs Logo">CJ Logo</a></div>
+			<ul class="links">
+				<li><a href="about">About Me</a></li>
+				<li><a href="contact">Contact</a></li>
+				<li><a href="otherProjects">Other Projects</a></li>
+			</ul>
+			<!--<a href="#" class="actionButton">Get Started</a>-->
+			<div class="toggleButton"><i class="fa-solid fa-bars"></i></div>
+		</div>
+		<div class="dropdownMenu open">
+			<li><a href="about">About Me</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="otherProjects">Other Projects</a></li>
+		</div>
+	</header>
+	<main>
+
+		<div>
+			<h1>Welcome to Homers Pizza Generator!</h1>
+			<p>Our pizza is made with fresh, locally-sourced randomly generated toppings. Come and enjoy easy decison
+				making on a pizza!</p>
+		</div>
+		<div class="otherBox">
+			<section id="homerPicBox" class="homerVeggie">
+				<div class="topBox">
+					<div class="middle pizza">
+						<h2>CHOOSE YOUR PIZZA</h2>
+					</div>
+				</div>
+				<form>
+					<section id="choices">
+						<!-- Box for choosing crust-->
+						<div class="option">
+							<h3>What size of pizza?</h3>
+							<select id="size" name="size">
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+							</select>
+						</div>
+						<!-- Box for choosing dough-->
+						<div class="option">
+							<h3>What king of dough?</h3>
+							<select id="dough" name="dough">
+								<option value='regular'>regular</option>
+								<option value='herbsGarlic'>herbs & garlic</option>
+							</select>
+						</div>
+						<!-- Box for choosing toppings-->
+						<div class="option">
+							<div class="smallBox">
+								<h3>What toppings?</h3>
+							</div>
+							<select id="toppings" name="toppings">
+								<option value='toppingYes'>si</option>
+								<option value='toppingsNo'>non</option>
+							</select>
+						</div>
+						<!-- Box for choosing meat-->
+						<div class="option">
+							<h3>With meat?</h3>
+							<select id="meatOrNo" name="meatOrNo">
+								<option value='meatYes'>oui</option>
+								<option value='meatNo'>no</option>
+							</select>
+						</div>
+					</section>
+					<div class="botBox">
+						<div class="middle">
+							<h4>Vegan options coming soon..?</h4>
+							<input id="submit" type="button" value="Make'me Pizza!" class="actionButton">
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+	</main>
+	<footer class="footer">
+		<span>Created by Ceej</span>
+		<span>New business email here</span>
+	</footer>
+	<script src="./Resources/JS/practice factory.js"></script>
+</body>
+
+<!--
+			///Example contact form 
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br>
+				<input type="submit" value="Send Message">
+			-->
